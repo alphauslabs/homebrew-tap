@@ -5,20 +5,20 @@
 class Bluectl < Formula
   desc "The official command line interface for Alphaus services."
   homepage "https://github.com/alphauslabs/bluectl"
-  version "0.6.2"
+  version "0.6.3"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alphauslabs/bluectl/releases/download/v0.6.2/bluectl_0.6.2_darwin_amd64.tar.gz"
-      sha256 "db0221232c65ae699b720ac86474a5f0c15a22d274136298f5e483577b085c0b"
+      url "https://github.com/alphauslabs/bluectl/releases/download/v0.6.3/bluectl_0.6.3_darwin_amd64.tar.gz"
+      sha256 "74c7a79340d5bf6bd9311a16526d147bd6d1b74b8b5d6553433366ba72ef4aac"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/alphauslabs/bluectl/releases/download/v0.6.2/bluectl_0.6.2_linux_amd64.tar.gz"
-      sha256 "0baed1d8ea7e19a759067bdb724890ac8038506c4d3ff36f32855b12124395e2"
+      url "https://github.com/alphauslabs/bluectl/releases/download/v0.6.3/bluectl_0.6.3_linux_amd64.tar.gz"
+      sha256 "dcaf9e2c98b3683c6504c9221a25a82c8c93044ad57d88de23374f7f79c07990"
     end
   end
 
