@@ -5,23 +5,31 @@
 class Bluectl < Formula
   desc "The official command line interface for Alphaus services."
   homepage "https://github.com/alphauslabs/bluectl"
-  version "0.31.6"
+  version "0.31.7"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/alphauslabs/bluectl/releases/download/v0.31.6/bluectl_0.31.6_darwin_amd64.tar.gz"
-      sha256 "32937e35588220b0ea7c5c3a1f0362036e4f65eafaf62969b3e43158beeefa0e"
+    url "https://github.com/alphauslabs/bluectl/releases/download/v0.31.7/bluectl_0.31.7_darwin_amd64.tar.gz"
+    sha256 "0a9e001442a278806f80efb7e5ef85f9f5929d029d6714d78e24b9fa25756246"
 
-      def install
-        bin.install "bluectl"
+    def install
+      bin.install "bluectl"
+    end
+
+    if Hardware::CPU.arm?
+      def caveats
+        <<~EOS
+          The darwin_arm64 architecture is not supported for the Bluectl
+          formula at this time. The darwin_amd64 binary may work in compatibility
+          mode, but it might not be fully supported.
+        EOS
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/alphauslabs/bluectl/releases/download/v0.31.6/bluectl_0.31.6_linux_amd64.tar.gz"
-      sha256 "5e58cb5833e34bbc4aea60318d2613ddcbf667aff7008eb3fa0d6ed4260d35b7"
+      url "https://github.com/alphauslabs/bluectl/releases/download/v0.31.7/bluectl_0.31.7_linux_amd64.tar.gz"
+      sha256 "1b7da225903e27447ed33727a6d913a1fce0eb0a5bc7501832ea6e892f0c0ff9"
 
       def install
         bin.install "bluectl"
