@@ -5,11 +5,11 @@
 class Tucp < Formula
   desc "The official command line interface for Alphaus TrueUnblended Control Plane service."
   homepage "https://github.com/alphauslabs/tucp"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
-    url "https://github.com/alphauslabs/tucp/releases/download/v0.3.1/tucp_0.3.1_darwin_amd64.tar.gz"
-    sha256 "9ad86abd268b60f7d6fee1a456d45a4e09b193b61e7970e0db6da8d9dbb4f0ff"
+    url "https://github.com/alphauslabs/tucp/releases/download/v0.3.2/tucp_0.3.2_darwin_amd64.tar.gz"
+    sha256 "593c26d4502c56a796ceecc8f2b28e3ac80260209907200ffe4975579b732306"
 
     def install
       bin.install "tucp"
@@ -28,8 +28,8 @@ class Tucp < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/alphauslabs/tucp/releases/download/v0.3.1/tucp_0.3.1_linux_amd64.tar.gz"
-      sha256 "cf942aab0d04a364ad260be7464d53c963989addbe0028447b9165345e56818d"
+      url "https://github.com/alphauslabs/tucp/releases/download/v0.3.2/tucp_0.3.2_linux_amd64.tar.gz"
+      sha256 "10026a4e6d18a0c0aee0ab21a858a37b158d77e05dcc1ffa68e51f606c6132b4"
 
       def install
         bin.install "tucp"
