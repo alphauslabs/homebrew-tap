@@ -5,11 +5,11 @@
 class Ops < Formula
   desc "The official command line interface for Alphaus long operations service."
   homepage "https://github.com/alphauslabs/ops"
-  version "0.1.2"
+  version "0.2.0"
 
   on_macos do
-    url "https://github.com/alphauslabs/ops/releases/download/v0.1.2/ops_0.1.2_darwin_amd64.tar.gz"
-    sha256 "769ffd5abd49d96eb9e27f68b46559ed02b326152fc6b6354ff016f310a8eb5a"
+    url "https://github.com/alphauslabs/ops/releases/download/v0.2.0/ops_0.2.0_darwin_amd64.tar.gz"
+    sha256 "24082d191902581dc4e002affb2a60343f43cb185052dc7f23c715f07cb27613"
 
     def install
       bin.install "ops"
@@ -28,8 +28,8 @@ class Ops < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/alphauslabs/ops/releases/download/v0.1.2/ops_0.1.2_linux_amd64.tar.gz"
-      sha256 "ce076d16c3c7198cae1bee2cf4c44598fda43f409a5b3c2ca6262a3d744efbb1"
+      url "https://github.com/alphauslabs/ops/releases/download/v0.2.0/ops_0.2.0_linux_amd64.tar.gz"
+      sha256 "d26aa6aad84fb3a9e8354c0191448641b861f34714a10a80a65e310c676a46f1"
 
       def install
         bin.install "ops"
