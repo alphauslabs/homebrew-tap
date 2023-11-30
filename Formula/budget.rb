@@ -5,11 +5,11 @@
 class Budget < Formula
   desc "The official command line interface for Alphaus internal budget service."
   homepage "https://github.com/alphauslabs/budget"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
-    url "https://github.com/alphauslabs/budget/releases/download/v0.1.0/budget_0.1.0_darwin_amd64.tar.gz"
-    sha256 "87bf821cb9d16b949bf60ddc596019e9adab5d49908c7b4c98cfe08e33dd65b8"
+    url "https://github.com/alphauslabs/budget/releases/download/v0.1.1/budget_0.1.1_darwin_amd64.tar.gz"
+    sha256 "b0a3520b9c7127a2fbd3c9c095a9d0c22b2997f1c2473c5aee3bbdc3f575ee5c"
 
     def install
       bin.install "budget"
@@ -28,8 +28,8 @@ class Budget < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/alphauslabs/budget/releases/download/v0.1.0/budget_0.1.0_linux_amd64.tar.gz"
-      sha256 "ce3302403b1a01648381c31473fe0ad6f4a6be36696d492f4bd1c02215ec660c"
+      url "https://github.com/alphauslabs/budget/releases/download/v0.1.1/budget_0.1.1_linux_amd64.tar.gz"
+      sha256 "1ca601ad334d7f379c2b05a3a5a3ddbea0f5a6fb8aa015d419b0416fe0a20cd4"
 
       def install
         bin.install "budget"
