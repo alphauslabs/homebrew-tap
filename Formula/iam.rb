@@ -5,11 +5,11 @@
 class Iam < Formula
   desc "The official command line interface for Alphaus internal IAM service."
   homepage "https://github.com/alphauslabs/iam"
-  version "0.4.6"
+  version "0.4.7"
 
   on_macos do
-    url "https://github.com/alphauslabs/iam/releases/download/v0.4.6/iam_0.4.6_darwin_amd64.tar.gz"
-    sha256 "52e2b51fd75ab849d4c1798a03f76aa6333cb9e73c11b55ca17952e96b93877a"
+    url "https://github.com/alphauslabs/iam/releases/download/v0.4.7/iam_0.4.7_darwin_amd64.tar.gz"
+    sha256 "d7ed69ff5643e8cf23d518b539413ef3af953ad824a806c2b04ddca4a71a4f02"
 
     def install
       bin.install "iam"
@@ -27,10 +27,9 @@ class Iam < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/alphauslabs/iam/releases/download/v0.4.6/iam_0.4.6_linux_amd64.tar.gz"
-      sha256 "63306fa68676245a0afc1c823fe56b76621ed697eb18ccd300b1c220652fb26e"
-
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/alphauslabs/iam/releases/download/v0.4.7/iam_0.4.7_linux_amd64.tar.gz"
+      sha256 "e1c84c81bbece8b2a61d958fd571b5742107938c3180ee7b63a3a00efc54e8f2"
       def install
         bin.install "iam"
       end
