@@ -5,11 +5,11 @@
 class Oops < Formula
   desc "Kubernetes-native testing tool."
   homepage "https://github.com/alphauslabs/oops"
-  version "1.2.10"
+  version "1.2.11"
 
   on_macos do
-    url "https://github.com/alphauslabs/oops/releases/download/v1.2.10/oops_1.2.10_darwin_amd64.tar.gz"
-    sha256 "ae927055544d5a77ed12b357db675f01d09cc472d9b48f29553322aa9526b024"
+    url "https://github.com/alphauslabs/oops/releases/download/v1.2.11/oops_1.2.11_darwin_amd64.tar.gz"
+    sha256 "20e02fbdd79bbcd170a219c2f4af139a4b089a9e88b4c47d8f572ea60ee5908d"
 
     def install
       bin.install "oops"
@@ -28,8 +28,8 @@ class Oops < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alphauslabs/oops/releases/download/v1.2.10/oops_1.2.10_linux_amd64.tar.gz"
-      sha256 "48f0ebab6721fcc72bec07b40155d674aaa4b4b2d4ba668e39cc7b292d31f13d"
+      url "https://github.com/alphauslabs/oops/releases/download/v1.2.11/oops_1.2.11_linux_amd64.tar.gz"
+      sha256 "10818e72bcb32d86cefdba0e3a686f15440757b9ba381621d14fba3b7d0cf2aa"
       def install
         bin.install "oops"
       end
