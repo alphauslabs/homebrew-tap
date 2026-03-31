@@ -5,13 +5,13 @@
 class Tucp < Formula
   desc "The official command line interface for Alphaus TrueUnblended Control Plane service."
   homepage "https://github.com/alphauslabs/tucp"
-  version "0.8.6"
+  version "0.8.7"
 
   on_macos do
-    url "https://github.com/alphauslabs/tucp/releases/download/v0.8.6/tucp_0.8.6_darwin_amd64.tar.gz"
-    sha256 "09fc7a589de3d50557640886eb46bafc12bb4d257b56b9b525fd85efa68e5a9b"
+    url "https://github.com/alphauslabs/tucp/releases/download/v0.8.7/tucp_0.8.7_darwin_amd64.tar.gz"
+    sha256 "b542be13193ad7d45b9d6183c4486e72a845fd3f8386211092228d698baa5889"
 
-    def install
+    define_method(:install) do
       bin.install "tucp"
     end
 
@@ -28,9 +28,9 @@ class Tucp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alphauslabs/tucp/releases/download/v0.8.6/tucp_0.8.6_linux_amd64.tar.gz"
-      sha256 "ad2f6de7df92a3e34a965ee295c6deca8bc4463b3b4a3695d438374078a0585b"
-      def install
+      url "https://github.com/alphauslabs/tucp/releases/download/v0.8.7/tucp_0.8.7_linux_amd64.tar.gz"
+      sha256 "43113cda82b303e61611c0404c720dd7ec560429066b6111f125ce76ebbf34e5"
+      define_method(:install) do
         bin.install "tucp"
       end
     end
