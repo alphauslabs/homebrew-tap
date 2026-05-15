@@ -9,7 +9,7 @@ class Oops < Formula
 
   on_macos do
     url "https://github.com/alphauslabs/oops/releases/download/v1.2.36/oops_1.2.36_darwin_amd64.tar.gz"
-    sha256 "be89eef7463af532e035ebc376fabeacdfd551a9a8e9a31aa0a19d7e4552cd4f"
+    sha256 "bc2fb77c01910b8785098319d571d47bbaeca70956b3fe5ff240e89988c564aa"
 
     define_method(:install) do
       bin.install "oops"
@@ -29,7 +29,7 @@ class Oops < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/alphauslabs/oops/releases/download/v1.2.36/oops_1.2.36_linux_amd64.tar.gz"
-      sha256 "a0922e6963beb8a02a766386a83bde51ee610deaa748a0f9b2e2d800a1ce2d54"
+      sha256 "e304f14993972b1f42dee7a702a3d9c2b3bfa33d0c4ebecaf6310578174de64c"
       define_method(:install) do
         bin.install "oops"
       end
