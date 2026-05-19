@@ -5,11 +5,11 @@
 class Bluectl < Formula
   desc "The official command line interface for Alphaus services."
   homepage "https://github.com/alphauslabs/bluectl"
-  version "0.35.4"
+  version "0.35.5"
 
   on_macos do
-    url "https://github.com/alphauslabs/bluectl/releases/download/v0.35.4/bluectl_0.35.4_darwin_amd64.tar.gz"
-    sha256 "d20198e6bf4de6d257ae9a4778a1e0b52d3304bda1afe6b51aac3413e815a39c"
+    url "https://github.com/alphauslabs/bluectl/releases/download/v0.35.5/bluectl_0.35.5_darwin_amd64.tar.gz"
+    sha256 "e29a368c2dfbafe4beb229f874b6a4643e55c1b424f68d6c53c508ecf652f7c4"
 
     define_method(:install) do
       bin.install "bluectl"
@@ -28,8 +28,8 @@ class Bluectl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alphauslabs/bluectl/releases/download/v0.35.4/bluectl_0.35.4_linux_amd64.tar.gz"
-      sha256 "de5376367982c7a02cd27decd6e42c748413a3c5e7d095f1ac14a11608fc32c0"
+      url "https://github.com/alphauslabs/bluectl/releases/download/v0.35.5/bluectl_0.35.5_linux_amd64.tar.gz"
+      sha256 "4be65fd0467608049bfd4598ec86e3a081e9917a6a53058a3ec2a449674576d5"
       define_method(:install) do
         bin.install "bluectl"
       end
